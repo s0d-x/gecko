@@ -1,2 +1,2 @@
-# gecko
+# Gecko
 :lizard: Gecko
