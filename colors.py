@@ -1,3 +1,11 @@
+#
+#   python header/module
+#--------------------------
+#   colors.py
+#   
+#   colors output
+#
+
 #------------------
 #   Colors ANSI
 #------------------

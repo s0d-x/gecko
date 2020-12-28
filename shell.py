@@ -1,5 +1,5 @@
 #
-#   python header/module
+#   python header/module (exec)
 #--------------------------
 #   shell.py
 #   
@@ -52,6 +52,17 @@ def helpmsg():
     print("   - [clear/cls]")
     print("   - [info]")
 #------------------
+
+#------------------
+#   Welcome MSG
+#------------------
+#   Welcome msg when Shell is started
+#
+def welcomemsg():
+    print(green + "Welcome to " + bold + info.ficnt["name"] + "-sh!" + white + " : A shell environment for " + green + info.ficnt["name2"] + reset)
+#------------------
+
+welcomemsg()
 
 while True:
     cmd = input(prompt)

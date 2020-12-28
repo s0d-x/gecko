@@ -7,11 +7,13 @@
 #
 
 import json
+import colors
 from colors import *
 
 with open('info.json') as fi:
     ficnt = json.loads(fi.read())
 
+pjclr = green
 pjnm = ficnt["name"]
 pjver = ficnt["version"]
 pjdesc = ficnt["desc"]
@@ -20,10 +22,10 @@ pjghurl = ficnt["ghurl"]
 
 def showinfo(pjnm, pjver, pjdesc, pjauth, pjghurl):
 
-    print(bold + green + "                       )/_           ")
-    print(bold + green + "             _.--..---\"-,--c_       " + blue + "Name" + yellow + " : " + white + pjnm)
-    print(bold + green + "        \L..'           ._O__)_     " + blue + "Version" + yellow + " : " + white + pjver)
-    print(bold + green + ",-.     _.+  _  \..--( /            " + blue + "Description" + yellow + " : " + white + pjdesc)
-    print(bold + green + "  `\.-''__.-' \ (     \_            " + blue + "Author" + yellow + " : " + white + pjauth)
-    print(bold + green + "    `'''       `\__   /\\            " + blue + "Github Repo" + yellow + " : " + white + pjghurl)
-    print(bold + green + "                ')                   ")
+    print(bold + pjclr + "                       )/_           ")
+    print(bold + pjclr + "             _.--..---\"-,--c_       " + blue + "Name" + yellow + " : " + pjclr + pjnm)
+    print(bold + pjclr + "        \L..'           ._O__)_     " + blue + "Version" + yellow + " : " + white + pjver)
+    print(bold + pjclr + ",-.     _.+  _  \..--( /            " + blue + "Description" + yellow + " : " + white + pjdesc)
+    print(bold + pjclr + "  `\.-''__.-' \ (     \_            " + blue + "Author" + yellow + " : " + white + pjauth)
+    print(bold + pjclr + "    `'''       `\__   /\\            " + blue + "Github Repo" + yellow + " : " + white + pjghurl)
+    print(bold + pjclr + "                ')                   ")
