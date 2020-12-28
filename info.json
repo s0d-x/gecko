@@ -2,5 +2,6 @@
     "name": "gecko",
     "version": "0.01",
     "desc": "Gecko is X",
+    "author": "s0d",
     "ghurl": "https://github.com/s0d-x/gecko"
 }
