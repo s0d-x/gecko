@@ -1,5 +1,9 @@
 import json
 
-with open('info.json', 'r') as fi:
+def debugmode(data):
+
+    with open('info.json') as fi:
         data = json.loads(fi.read())
-    ficnt = data
+    return data
+
+ficnt = debugmode([0])
