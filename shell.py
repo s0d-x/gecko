@@ -30,14 +30,14 @@ def execute_commands(cmd):
     try:
         subprocess.run(cmd.split())
     except Exception:
-        print("gecko-sh: command not found: {}".format(cmd))
+        print(bold + red + "gecko-sh" + reset + white + ": command not found:" + bold + " {}".format(cmd))
 
 #------------------
 #   Shell Prompt
 #------------------
 #   Variable = prompt
 #
-prompt = bold + blue + info.ficnt["name"] + yellow + " >" + reset + " "
+prompt = bold + pjclr + info.ficnt["name"] + yellow + " >" + reset + " "
 #------------------
 
 #------------------
@@ -46,11 +46,11 @@ prompt = bold + blue + info.ficnt["name"] + yellow + " >" + reset + " "
 #   Message for the "help" cmd
 #
 def helpmsg():
-    print(info.ficnt["name"] + "-sh: This is a shell environment for " + info.ficnt["name2"])
-    print("   - [exit]")
-    print("   - [help]")
-    print("   - [clear/cls]")
-    print("   - [info]")
+    print(bold + green + info.ficnt["name"] + "-sh!" + white + " : A shell environment for " + green + info.ficnt["name2"] + reset)
+    print("   " + bold + "- " + white + "[" + violet + "exit" + white + "]")
+    print("   " + bold + "- " + white + "[" + violet + "help" + white + "]")
+    print("   " + bold + "- " + white + "[" + violet + "clear/cls" + white + "]")
+    print("   " + bold + "- " + white + "[" + violet + "info" + white + "]")
 #------------------
 
 #------------------
@@ -59,7 +59,7 @@ def helpmsg():
 #   Welcome msg when Shell is started
 #
 def welcomemsg():
-    print(green + "Welcome to " + bold + info.ficnt["name"] + "-sh!" + white + " : A shell environment for " + green + info.ficnt["name2"] + reset)
+    print("Welcome to " + bold + green + info.ficnt["name"] + "-sh!" + white + " : A shell environment for " + green + info.ficnt["name2"] + reset)
 #------------------
 
 welcomemsg()
