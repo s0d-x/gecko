@@ -14,7 +14,7 @@ with open('info.json') as fi:
     ficnt = json.loads(fi.read())
 
 pjclr = green
-pjnm = ficnt["name"]
+pjnm = ficnt["name2"]
 pjver = ficnt["version"]
 pjdesc = ficnt["desc"]
 pjauth = ficnt["author"]
