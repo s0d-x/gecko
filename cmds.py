@@ -35,7 +35,7 @@ def clear():
 #   Message for the "help" cmd
 #
 def helpmsg():
-    print(bold + green + shname + "!" + white + " : A shell environment for " + green + info.ficnt["name2"] + reset)
+    print(bold + pjclr + shname + "!" + white + " : A shell environment for " + pjclr + info.ficnt["name2"] + reset)
     print("   " + bold + "- " + white + "[" + violet + "exit" + white + "]")
     print("   " + bold + "- " + white + "[" + violet + "help" + white + "]")
     print("   " + bold + "- " + white + "[" + violet + "clear/cls" + white + "]")
@@ -48,5 +48,5 @@ def helpmsg():
 #   Welcome msg when Shell is started
 #
 def welcomemsg():
-    print("Welcome to " + bold + green + info.ficnt["name"] + "-sh!" + white + " : A shell environment for " + green + info.ficnt["name2"] + reset)
+    print(bold + white + "Welcome to " + pjclr + info.ficnt["name"] + "-sh!" + white + " : A shell environment for " + pjclr + info.ficnt["name2"] + reset)
 #------------------
