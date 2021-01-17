@@ -30,5 +30,5 @@ def showinfo(pjnm, pjver, pjdesc, pjauth, pjghurl):
     print(bold + pjclr + ",-.     _.+  _  \..--( /            " + blue + "Description" + yellow + " : " + white + pjdesc)
     print(bold + pjclr + "  `\.-''__.-' \ (     \_            " + blue + "Author" + yellow + " : " + white + pjauth)
     print(bold + pjclr + "    `'''       `\__   /\\            " + blue + "Github Repo" + yellow + " : " + white + pjghurl)
-    print(bold + pjclr + "                ')                  "OS" + yellow + " : " + white + os)
+    print(bold + pjclr + "                ')                  " + blue + "OS" + yellow + " : " + white + os)
     print(reset)
